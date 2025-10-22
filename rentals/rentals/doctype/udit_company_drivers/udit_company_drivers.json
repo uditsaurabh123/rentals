@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:DR-{first_name}-{last_name}-{####}",
@@ -11,7 +12,9 @@
   "last_name",
   "column_break_aemc",
   "phone_number",
-  "license_number"
+  "license_number",
+  "published",
+  "route"
  ],
  "fields": [
   {
@@ -37,12 +40,25 @@
    "fieldname": "license_number",
    "fieldtype": "Data",
    "label": "License Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2025-10-22 02:41:10.833851",
+ "modified": "2025-10-23 05:08:03.788451",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Udit_Company_Drivers",
@@ -62,6 +78,7 @@
    "write": 1
   }
  ],
+ "route": "drivers",
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
