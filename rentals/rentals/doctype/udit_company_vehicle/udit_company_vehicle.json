@@ -2,6 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "format:Vehicle-{model}-{make}-{####}",
  "creation": "2025-10-21 13:39:19.612249",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,6 +10,7 @@
   "model",
   "make",
   "year",
+  "booked",
   "column_break_oiuc",
   "licence_plate",
   "color",
@@ -48,17 +50,23 @@
    "fieldname": "title",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Title",
-   "reqd": 1
+   "label": "Title"
+  },
+  {
+   "default": "0",
+   "fieldname": "booked",
+   "fieldtype": "Check",
+   "label": "Is Booked"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-21 14:24:24.288494",
+ "modified": "2025-10-22 00:29:02.158077",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Udit_Company_Vehicle",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

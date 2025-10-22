@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{customer_name}-{location}-{####}",
+ "creation": "2025-10-21 22:55:42.416821",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "car",
+  "customer_name",
+  "ride_confirm_status",
+  "column_break_cawk",
+  "phone_number",
+  "location",
+  "pickup_date_and_time",
+  "geolocation"
+ ],
+ "fields": [
+  {
+   "fieldname": "car",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Car",
+   "options": "Udit_Company_Vehicle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cawk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pickup_date_and_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Pickup Date and Time",
+   "reqd": 1
+  },
+  {
+   "default": "New",
+   "fieldname": "ride_confirm_status",
+   "fieldtype": "Select",
+   "label": "Ride Confirm Status",
+   "options": "New\nAccepted\nRejected"
+  },
+  {
+   "fieldname": "geolocation",
+   "fieldtype": "Geolocation",
+   "label": "Geolocation"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-22 00:16:18.765535",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Udit_Company_RideOrder",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

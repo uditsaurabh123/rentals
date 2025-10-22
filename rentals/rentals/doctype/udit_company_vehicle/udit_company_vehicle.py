@@ -11,3 +11,6 @@ class Udit_Company_Vehicle(Document):
 	
 	def set_title(self):
 		self.title = f"{self.make} - {self.model} - {self.year}"
+
+	def show_first_name(self):
+		print(f"{self.make} - {self.model} - {self.year}")	
