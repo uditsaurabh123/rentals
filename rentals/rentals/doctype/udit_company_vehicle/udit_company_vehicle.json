@@ -5,6 +5,7 @@
  "allow_rename": 1,
  "autoname": "format:Vehicle-{model}-{make}-{####}",
  "creation": "2025-10-21 13:39:19.612249",
+ "default_view": "List",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -78,7 +79,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2025-10-23 04:57:44.909427",
+ "modified": "2025-10-27 08:15:32.276439",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Udit_Company_Vehicle",
