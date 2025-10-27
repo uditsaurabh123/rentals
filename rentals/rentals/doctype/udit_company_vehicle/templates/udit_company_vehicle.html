@@ -1,7 +1,11 @@
 {% extends "templates/web.html" %}
-<h1>Hello from vechile list</h1>
 {% block page_content %}
+<img src="{{ vehicle_image }}" alt="Vehicle Image" style="max-width:100%; height:auto;"/>
 <h1>{{ title }}</h1>
+<h3>Color: {{ color }}</h3>
+<h5>Make: {{ make }}</h5>
+<h5>Model: {{ model }}</h5>
+<h5>Licence Plate: {{ licence_plate }}</h5>
 {% endblock %}
 
 <!-- this is a sample default web page template -->
